@@ -3,11 +3,8 @@ from math import log
 
 def Eta(x):
     ''' Implements the function eta(x) = - x * ln(x) with eta(0) = 0 '''
+    return -x * log(x, 2) if x > 0 else 0.0
 
-    if x > 0:
-        return -x * log(x, 2)
-    else:
-        return 0.0
 
 def Multinomial(lst):
     # Source: https://stackoverflow.com/questions/46374185/does-python-have-a-function-which-computes-multinomial-coefficients

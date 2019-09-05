@@ -45,7 +45,7 @@ class StandardTableau():
                 self.columns[i].append(start + i)
             start += x
 
-        # Permutations that helps setting up the column stabilizer
+        # Permutation that helps setting up the column stabilizer
         self.column_reorderer = ~Permutation(list(chain(*self.columns)))
 
         # Calculate sym. dimension and product of all hook numbers
